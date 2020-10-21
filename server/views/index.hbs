@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Itens</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Tabela de preços</h1>
+    </header>
+
+    <div class="content">
+        <table class='rTable'>
+            <thead>
+                <tr>
+                    <td>Identificação</td>
+                    <td>Nome</td>
+                    <td>Preço Atual</td>
+                    <td>Menor Preço</td>
+                    <td>Preço Ideal</td>
+                    <td>Modificações</td>
+                </tr>
+            </thead>
+            {{#each storage}}
+                <tr>
+                    <td>{{this.id}}</td>
+                    <td>{{this.name}}</td>
+                    <td><a href="{{this.URL}}">R${{this.actual_price}}</a></td>
+                    <td>R${{this.lower_price}}</td>
+                    <td>R${{this.ideal_price}}</td>
+                    <td><a href="">Modificar produto {{this.id}}</a></td>
+                </tr>
+                
+            {{/each}}
+        </table>
+
+    </div>
+</body>
+
+</html>

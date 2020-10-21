@@ -1,0 +1,50 @@
+
+Conectando com 1
+URL : https://www.amazon.com.br/8GHZ-100-100000022BOX-AMD-Ryzen-3600X/dp/B07SQBFN2D/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=amd+ryzen+5+3600&qid=1603208944&s=electronics&sr=1-1
+
+Carregando página...
+Conferindo os preços...
+
+Price bigger than ideal_price 
+fechando conexão...
+
+
+Conectando com 2
+URL : https://www.amazon.com.br/Thermaltake-CA-1M7-00M1WN-00-Gabinete-TT/dp/B07KTCX38L/ref=pd_sbs_147_7?_encoding=UTF8&pd_rd_i=B07KTCX38L&pd_rd_r=f77fa556-a63f-40dc-b67c-07201e9fbe7d&pd_rd_w=obvmi&pd_rd_wg=dftG7&pf_rd_p=8e0365a0-40c9-4854-90b9-039b9c2848c4&pf_rd_r=0CZARP7MZNDHF5YBP10H&psc=1&refRID=0CZARP7MZNDHF5YBP10H
+
+Carregando página...
+Traceback (most recent call last):
+  File "/home/joaquino/Área de Trabalho/Python_Scraper_Prices/scrapper.py", line 49, in check_price_Amazon
+    element_title = driver.find_element_by_id('productTitle')
+  File "/home/joaquino/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/home/joaquino/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/joaquino/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/joaquino/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: headless chrome=86.0.4240.75)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run.py", line 6, in <module>
+    run.initialize()
+  File "/home/joaquino/Área de Trabalho/Python_Scraper_Prices/scrapper.py", line 35, in initialize
+    self.check_price_Amazon(t)
+  File "/home/joaquino/Área de Trabalho/Python_Scraper_Prices/scrapper.py", line 51, in check_price_Amazon
+    element_title = driver.find_element_by_id('title')
+  File "/home/joaquino/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/home/joaquino/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/joaquino/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/joaquino/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: headless chrome=86.0.4240.75)
+
